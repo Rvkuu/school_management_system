@@ -83,6 +83,7 @@ The __init__ constructor initializes a new student object with:
 -   name
 -   age
 -   grade
+
 And each of this value is assigned to self, so it belongs to the object.
 The Memento design can be seen implemented in the save_state method, when initialized, it creates a snapshot of the current state of the student and returns a Student.Memento object holding the student's current data. The snapshot can later be used to restore this exact state.
 Also in the restore_state method, it restores the student's data from a Memento, which essentially rolls back or re-applies a change depending on undp/redo.
